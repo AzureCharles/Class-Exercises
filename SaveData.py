@@ -11,7 +11,7 @@ class SaveData:
             head = ['仓库名','作者链接','仓库链接','star数','fork数']
             csv_file.writerow(head)
 
-        self.conn = MongoClient('192.168.0.113', 27017)
+        self.conn = MongoClient('your server', 27017)
         # 可在此更改mongodb的服务器地址
         self.collection = self.conn['gitdb']['git']
 
